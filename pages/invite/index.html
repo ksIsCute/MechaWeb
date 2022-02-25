@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv = "refresh" content = "5; url = https://discord.com/oauth2/authorize?client_id=930821149644963900&scope=bot&permissions=1099511627775&redirect_uri=https%3A%2F%2Fmechadiscord.tk%2Fpages%2Finvited" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mecha</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mecha.ico" type="image/x-icon">
+  </head>
+  <body>
+    <h1> The redirect will begin in <span id="countdowntimer">5 </span> Seconds</p>
+
+    <script type="text/javascript">
+        var timeleft = 5;
+        var downloadTimer = setInterval(function(){
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+        if(timeleft <= 0)
+            clearInterval(downloadTimer);
+        },1000);
+    </script>
+  </body>
+</html>
