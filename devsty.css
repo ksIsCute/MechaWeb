@@ -1,7 +1,5 @@
-@font-face {
-  font-family: UniSans;
-  src: url("fonts/Uni Sans Heavy.otf") format("opentype");
-}
+import 'animate.css';
+
 @font-face {
   font-family: Lemon;
   src: url("fonts/LemonMilk.otf") format("opentype");

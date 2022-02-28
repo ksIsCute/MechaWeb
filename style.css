@@ -1,10 +1,18 @@
+import 'animate.css';
+
 @font-face {
-  font-family: UniSans;
-  src: url("fonts/Uni Sans Heavy.otf") format("opentype");
+  font-family: nothing;
+  src: url("fonts/randomtest.otf") format("opentype");
 }
+
 @font-face {
   font-family: Lemon;
   src: url("fonts/LemonMilk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: UniSans;
+  src: url("fonts/UniSansHeavy.otf") format("opentype");
 }
 
 body {
