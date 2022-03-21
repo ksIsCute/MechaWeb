@@ -52,6 +52,16 @@
           var el = document.getElementById('splash')
           el.remove()
         }, 3000)
+        setTimeout(() => {
+          TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+          LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+          window.onscroll = function() {
+            window.scrollTo(LeftScroll, TopScroll);
+          };
+        }, 100);
+        setTimeout(() => {
+          window.onscroll = function() {};
+        }, 3500)
       </script>
     </div>
     <h1 style="font-size: 100px; font-family:UniSans">MECHA</h1>
