@@ -48,18 +48,22 @@
       <script>
         setTimeout(() => {
         document.getElementById('splash').classList.toggle('sfade'); }, 2000);
+        console.Log("Fading splash")
         setTimeout(() => {
           var el = document.getElementById('splash')
+          console.log("Removing splash element")
           el.remove()
         }, 3000)
         setTimeout(() => {
           TopScroll = window.pageYOffset || document.documentElement.scrollTop;
           LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
           window.onscroll = function() {
+            console.Log("Scrolling disabled!")
             window.scrollTo(LeftScroll, TopScroll);
           };
         }, 100);
         setTimeout(() => {
+          console.Log("Scrolling enabled!")
           window.onscroll = function() {};
         }, 3500)
       </script>
