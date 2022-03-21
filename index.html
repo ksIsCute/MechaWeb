@@ -55,17 +55,18 @@
           el.remove()
         }, 3000)
         setTimeout(() => {
+          console.log("Scrolling disabled!");
           TopScroll = window.pageYOffset || document.documentElement.scrollTop;
           LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
           window.onscroll = function() {
-            console.log("Scrolling disabled!")
+            console.log("No scrolling!!");
             window.scrollTo(LeftScroll, TopScroll);
           };
         }, 100);
         setTimeout(() => {
           console.log("Scrolling enabled!")
           window.onscroll = function() {};
-        }, 3500)
+        }, 2500)
       </script>
     </div>
     <h1 style="font-size: 100px; font-family:UniSans">MECHA</h1>
