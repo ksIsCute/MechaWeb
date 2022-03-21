@@ -29,7 +29,7 @@ body {
   font-family: Lemon;
   justify-content: center;
   text-align: center;
-  color: #90E0EF;
+  color: #00406C;
   flex-direction: row-reverse;
   display: block;
   justify-content: center;
@@ -121,6 +121,7 @@ nav a:hover::before {
   background: linear-gradient(90deg, rgba(0,41,69,1) 0%, rgba(0,64,108,1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #0077B6;
 }
 
 .imgh{

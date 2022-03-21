@@ -9,19 +9,19 @@
     <meta property="og:site_name" content="mechabot.tk">
     <meta property="og:title" content="Mecha">
     <meta property="og:description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server." property="og:description">
-    <meta property="og:image" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mecha.ico">
+    <meta property="og:image" content="images/mechastatic.png">
     <meta property="og:thumbnail" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mechabanners.gif">
-    <meta name="theme-color" content="#ede0d4"/>
+    <meta name="theme-color" content="#003356"/>
     <meta name="twitter:card" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mechabanners.gif">
     <meta name="twitter:site" content="@discord">
     <meta name="twitter:creator" content="@DiscordMecha">
-    <meta content="#B08968" data-react-helmet="true" name="theme-color" />
+    <meta content="#003356" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mecha</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mecha.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/mechastatic.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
@@ -31,7 +31,7 @@
         </h1>
         <nav>
           <ul>
-            <img src="images/mechastatic.png" alt="Mecha Logo" width="80px" height="60px" style="float: left; position: absolute; left: 1%">
+            <img src="images/mechastatic.png" alt="Mecha Logo" width="80px" height="60px" style="float: left; position: absolute; left: 1%" class="animate__animated animate__flash animate__infinite">
             <li><a href="index.html">Home</a></li>
             <li><a href="pages/developers">Developers</a></li>
             <li><a href="pages/security/privacy">Privacy Policy</a></li>
@@ -44,7 +44,7 @@
       </h1>
     </header>
     <div id='splash'>
-      <img alt='MechaLogo' class='slogo' src='images/mechastatic.png'/>
+      <img alt='MechaLogo' class='slogo animate__animated animate__heartBeat animate__infinite' src='images/mechastatic.png'/>
       <script>
         setTimeout(() => {
         document.getElementById('splash').classList.toggle('sfade'); }, 2000);
@@ -91,10 +91,6 @@
         <li>Low latency and advanced moderation with easy to learn syntax</li>
       </h3>
       <h3>
-        <li>Modern designs with specially designed color palettes</li>
-      </h3>
-      <img src="images/Palette.webp" alt="Custom Colour palette" class="colour-palette">
-      <h3>
         <li>Mecha is in <i>BETA</i>, so expect some errors, bugs, and weird encounters, but also expect some <i>easter eggs!</i></li>
       </h3>
       <h3>
@@ -121,5 +117,8 @@
       var element = document.body;
       element.classList.toggle("dark-mode");
     }
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }  
   </script>
 </html>
