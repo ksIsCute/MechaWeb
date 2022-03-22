@@ -22,14 +22,14 @@ html {
   height: calc(var(--vh, 1vh) * 100);
 }
 body {
-  background: rgb(0,180,216);
-  background: linear-gradient(90deg, rgba(0,180,216,1) 0%, rgba(0,119,182,1) 100%);
+  background: rgb(4,48,133);
+  background: linear-gradient(234deg, rgba(4,48,133,1) 0%, rgba(45,97,199,1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: Lemon;
+  font-family: Quicksand;
   justify-content: center;
   text-align: center;
-  color: #00406C;
+  color: #b3deff;
   flex-direction: row-reverse;
   display: block;
   justify-content: center;
@@ -54,11 +54,44 @@ img {
 	margin: 0 auto;
 }
 
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth {color: #b3deff; width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper { width: 980px; margin: 30px auto; position: relative;}
+.counter {
+  background: #1a677a;
+  padding: 20px 0;
+  border-radius: 5px;
+ }
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.fa-2x { margin: 0 auto; float: none; display: table;color:#bac6f7;}
+
+
 .dot {
   height: 180px;
   width: 180px;
-  background: rgb(37,110,159);
-  background: radial-gradient(circle, rgba(37,110,159,0.9682247899159664) 0%, rgba(0,129,218,1) 100%);
+  background: rgb(23,90,134);
+  background: radial-gradient(circle, rgba(23,90,134,0.9682247899159664) 0%, rgba(0,151,254,1) 100%);
   border-radius: 50%;
   display: inline-flex;
 }
@@ -126,8 +159,7 @@ nav a:hover::before {
 }
 
 .dark-mode {
-  background: rgb(0,41,69);
-  background: linear-gradient(90deg, rgba(0,41,69,1) 0%, rgba(0,64,108,1) 100%);
+  background:#0c0d0f;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #89cff0;

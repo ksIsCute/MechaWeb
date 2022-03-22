@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <meta name="description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server.">
     <meta name="theme-color" content="#ede0d4"/>
     <link rel="apple-touch-icon" href="images/mechastatic.png">
@@ -27,8 +32,7 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">
-        </h1>
+        <h1 class="logo"></h1>
         <nav>
           <ul>
             <a href="index.html"><img src="images/mechastatic.png" alt="Mecha Logo" width="80px" height="60px" style="float: left; position: absolute; left: 1%" class="animate__animated animate__pulse animate__infinite"></a>
@@ -73,7 +77,7 @@
     </div>
     <h1 style="font-size: 100px; font-family:UniSans" class="animate__animated animate__pulse animate__infinite">MECHA</h1>
     <p style="text-align:center" class="animate__animated animate__lightSpeedInRight">(BETA)</p>
-    <h3><i>"Redefining Modernity"</i></h3>
+    <h2><i>"Redefining Modernity"</i></h2>
     <br></br>
     <img src="images/HelpCommand.webp" width=400 height=300 alt="Custom help command example">
     <p> Automated Help Commands </p>
@@ -107,23 +111,36 @@
       <a class="btn" href="pages/invite">Invite V1.5.0!</a>
       <a class="btn" href="pages/support" TOS>Mecha's Support Server!</a>
     </div>
-    <div>
-      <br></br>
+    <div class="wrapper">
+      <div class="counter col_fourth">
+        <img src="images/server.png" height=70 width=70 alt="Server Icon">
+        <h2>32</h2>
+        <p class="count-text ">servers currently</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/user.png" height=70 width=70 alt="User icon">
+        <h2>7672</h2>
+        <p class="count-text ">Active users!</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/stopwatch.png" height=70 width=70 alt="Timer icon">
+        <h2>24/7</h2>
+        <p class="count-text ">We're online! All the time!</p>
+      </div>
+    <br></br>
+    </div>
+    <span>
       <a href="https://discord.gg/sfdKY7ZufY" target="popup"><img src="images/discord.png" class="imgh" alt="Mecha's Support Server"/></a>
       <a href="https://twitter.com/@discordmecha" target="popup"><img src="images/twitter.png" class="imgh" alt="Mecha's Twitter"/></a>
       <a href="https://github.com/ksiscute" target="popup"><img src="images/github.png" class="imgh" alt="Github"/></a>
-    </div>
-    <div style="display:flex-inline; color:#00406C;">
-      <span class="dot">
-        <h3><img src="images/server.png" height=70 width=70 alt="Server Icon"><br>Now in 31 servers!</h3>
-      </span>
-      <span class="dot">
-        <h3><img src="images/user.png" height=70 width=70 alt="User icon"><br>7197 active users!</h3>
-      </span>
-      <span class="dot">
-        <h3><img src="images/stopwatch.png" height=70 width=70 alt="Timer icon / clock icon"><br>24/7 Uptime!</h3>
-      </span>
-    </div>
+    </span>
+    <div class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Transactions</h2>
+          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">A better way to send money</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+        </div>
   </body>
   <script>
     function darkmode() {
