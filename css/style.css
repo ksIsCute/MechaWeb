@@ -1,5 +1,9 @@
-import 'animate.css';
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@import 'animate.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 @font-face {
   font-family: nothing;
   src: url("/fonts/randomtest.otf") format("opentype");
@@ -78,14 +82,23 @@ img {
 
 .wrapper { width: 980px; margin: 30px auto; position: relative;}
 .counter {
-  background: #1a677a;
+  text-shadow:1px 1px 2px #24508a;
+  box-shadow:2px 2px 4px #0d1554;
+  background: #3c4ed7;
   padding: 20px 0;
   border-radius: 5px;
  }
 .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
 .count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
-.fa-2x { margin: 0 auto; float: none; display: table;color:#bac6f7;}
+.fa-2x { margin: 0 auto; float: none; display: table;color:#8e9cd2;}
 
+splashimg {
+  transition: transform 2s;
+}
+
+splashimg {
+  transform: rotate(1080deg);
+}
 
 .dot {
   height: 180px;
@@ -188,7 +201,7 @@ nav a:hover::before {
   background-color: #03045E;
 
   color: white;
-  font-family: Lemon;
+  font-family: Quicksand;
   text-decoration: none;
   text-align: center;
 
@@ -322,3 +335,5 @@ background-color: #5a98c4;
 .colour-palette {
   width: 80%;
 }
+
+/* Tailwind css */
