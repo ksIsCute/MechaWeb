@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <meta name="description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server.">
+    <metasss name="description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server.">
     <meta name="theme-color" content="#ede0d4"/>
     <link rel="apple-touch-icon" href="images/mechastatic.png">
     <meta name="author" content="Mecha Bot">
@@ -27,7 +26,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mecha</title>
-    <link rel="shortcut icon" href="images/mechastatic.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.imgur.com/DCHin6s.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
@@ -61,28 +60,28 @@
         console.log(hr);
         if (hr < 10) {
           x.innerHTML = "Good Morning!"
-        } else if (hr > 9) {
-            x.innerHTML = "Good Afternoon!"
-          } else if (hr > 13) {
+        } else if (hr > 16) {
             x.innerHTML = "Good Evening!"
+          } else if (hr > 9) {
+            x.innerHTML = "Good Afternoon!"
           }
       </script>
       <script>
         setTimeout(() => {
-        document.getElementById('splash').classList.toggle('sfade'); }, 2000);
-        console.log("Fading splash")
+          document.getElementById('splash').classList.toggle('sfade'); 
+        }, 2000);
+        console.log("Fading splash");
         setTimeout(() => {
-          var el = document.getElementById('splash')
-          console.log("Removing splash element")
-          el.remove()
-        }, 3000)
+          var el = document.getElementById('splash');
+          console.log("Removing splash element");
+          el.remove();
+        }, 3000);
         setTimeout(() => {
           console.log("Scrolling disabled!");
           TopScroll = window.pageYOffset || document.documentElement.scrollTop;
           LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
           window.onscroll = function() {
-            console.log("No scrolling!!");
-            window.scrollTo(LeftScroll, TopScroll);
+            window.scrollTo(0, 0);
           };
         }, 100);
         setTimeout(() => {
@@ -92,12 +91,17 @@
       </script>
     </div>
     <h1 style="font-size: 100px; font-family:UniSans" class="animate__animated animate__pulse animate__infinite">MECHA</h1>
-    <p style="text-align:center" class="animate__animated animate__lightSpeedInRight">(BETA)</p>
-    <h2><i>"Redefining Modernity"</i></h2>
+    <h2 id="redefining" style="font-family:Lexend Deca"h2>
+    <script>
+          var e = document.getElementById('redefining');
+          const array = ["Redefining Moderation", "Redefining Modernity", "Redefining Commitment", "Redefining Creativity", "Redefining Customization", "Redefining Efficiency"];
+          var random = Math.floor(Math.random()*array.length);
+          e.innerHTML = array[random];
+    </script>
     <h3 id="rm"></h3>
     <script>
-      x = document.getElementById("rm")
-      x.innerHTML = "(Beta)"
+      x = document.getElementById("rm");
+      x.innerHTML = "(Beta)";
     </script>
     <br></br>
     <img src="images/HelpCommand.webp" width=400 height=300 alt="Custom help command example">
@@ -148,19 +152,16 @@
       <p><img src="https://dcbadge.vercel.app/api/shield/bot/930821149644963900?theme=discord&amp;logoColor=red" alt="Mecha's status" width=208px height=31px></p>
     </div>
     <img style = "position:fixed;bottom:0;right:0" onclick="darkmode()" src="https://i.imgur.com/9bd5R6w.png" class=imgh alt = "Toggle dark mode" width=50px height=50px>
-    <div class="btn-wrap">
-      <a class="btn" href="pages/invite">Invite V1.5.0!</a>
-      <a class="btn" href="pages/support" TOS>Mecha's Support Server!</a>
-    </div>
+    <h1>Discord Features:</h1>
     <div class="wrapper">
       <div class="counter col_fourth">
         <img src="images/server.png" height=70 width=70 alt="Server Icon">
-        <h2>41</h2>
-        <p class="count-text ">servers currently</p>
+        <h2>40</h2>
+        <p class="count-text ">Current servers!</p>
       </div>
       <div class="counter col_fourth">
         <img src="images/user.png" height=70 width=70 alt="User icon">
-        <h2>8891</h2>
+        <h2>8947</h2>
         <p class="count-text ">Active users!</p>
       </div>
       <div class="counter col_fourth">
@@ -170,6 +171,42 @@
       </div>
       <br></br>
     </div>
+    <div class="btn-wrap">
+      <a class="btn" href="pages/invite">Invite V1.5.0!</a>
+      <a class="btn" href="pages/support" TOS>Mecha's Support Server!</a>
+    </div>
+    <p>(Support and invite lead to the Discord versions)</p>
+    <h1> Revolt Features:</h1>
+    <div class="wrapper">
+      <div class="counter col_fourth">
+        <img src="images/server.png" height=70 width=70 alt="Server Icon">
+        <h2>15</h2>
+        <p class="count-text ">servers currently</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/user.png" height=70 width=70 alt="User icon">
+        <h2>873</h2>
+        <p class="count-text ">Active users!</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/stopwatch.png" height=70 width=70 alt="Timer icon">
+        <h2>24/7</h2>
+        <p class="count-text">We're online!</p>
+      </div>
+      <a href="https://github.com/MechaCore" class="beeg">
+        <div class="counter col_fourth">
+          <img src="images/code.png" height=70 width=70 alt="Code Icon">
+          <h2>Open Source!</h2>
+          <p class="count-text">Mecha's Revolt bot is completely open source! Using a python wrapper for revolt named <a href="https://app.revolt.chat/invite/Db5wFse4">Voltage!</a></p>
+        </div>
+      </a>
+      <br></br>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="https://app.revolt.chat/bot/01FZB4GBHDVYY6KT8JH4RBX4KR">Invite v1.0.7!</a>
+      <a class="btn" href="https://app.revolt.chat/invite/PQdbCVys" TOS>Mecha's Server!</a>
+    </div>
+    <p>(Support and invite lead to the Revolt versions)</p>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
@@ -181,7 +218,7 @@
           <span style="color:#fff">© 2022 | Mecha</span>
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="https://github.com/ksiscute"><img class="imgh" width="24" height="24" src="images/github.png" alt="github"></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://github.com/ksIsCute/MechaBot"><img class="imgh" width="24" height="24" src="images/github.png" alt="github"></a></li>
           <li class="ms-3"><a class="text-muted" href="twitter.com/@discordMecha"><img class="imgh" width="24" height="24" src="images/twitter.png" alt="twitter"></a></li>
           <li class="ms-3"><a class="text-muted" href="https://discord.gg/sfdKY7ZufY"><img class="imgh" width="24" height="24" src="images/discord.png" alt="discord"></a></li>
         </ul>
@@ -189,15 +226,30 @@
     </div>
   </body>
   <script>
+    const counters = document.querySelectorAll('.count');
+    const speed = 2000;
+    
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = Math.trunc(target / speed);
+    
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
     function darkmode() {
       var element = document.body;
       element.classList.toggle("dark-mode");
-    }
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    }  
-    window.onload = function () {
-      console.log("Loaded!")
     }
   </script>
 </html>

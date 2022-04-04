@@ -640,6 +640,18 @@
   dependencies:
     "is-number" "^7.0.0"
 
+"unique-random-array@^3.0.0":
+  "integrity" "sha512-AETNmMf8dV7VfCu4pM5SO1nKkZZp3lZsbHk9VxkvR2ZjMYy4mzWwzez0g+ZtYIr+RaVH+UN8A003E7woM/ud7Q=="
+  "resolved" "https://registry.npmjs.org/unique-random-array/-/unique-random-array-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "unique-random" "^3.0.0"
+
+"unique-random@^3.0.0":
+  "integrity" "sha512-4vjtE3pH6xO5OmsSmjc6KPgHy2rbCw66BbMRLIyXkuq+WzOKA1oNkqQ+Y7Lh+sE0DrOrWMSpFkivhhzCF7J6HA=="
+  "resolved" "https://registry.npmjs.org/unique-random/-/unique-random-3.0.0.tgz"
+  "version" "3.0.0"
+
 "util-deprecate@^1.0.2":
   "integrity" "sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8="
   "resolved" "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
