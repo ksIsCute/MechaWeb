@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <metasss name="description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server.">
     <meta name="theme-color" content="#ede0d4"/>
     <link rel="apple-touch-icon" href="images/mechastatic.png">
     <meta name="author" content="Mecha Bot">
@@ -9,54 +15,94 @@
     <meta property="og:site_name" content="mechabot.tk">
     <meta property="og:title" content="Mecha">
     <meta property="og:description" content="Modernized, sleek, and user friendly, Mecha is everything you could ask for! With a stable and open TOS, privacy policy and more. Mecha is all about user experience, and creating a better tomorrow. For you, your members, and your server." property="og:description">
-    <meta property="og:image" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mecha.ico">
+    <meta property="og:image" content="https://i.imgur.com/HaTL8Sb.png">
     <meta property="og:thumbnail" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mechabanners.gif">
-    <meta name="theme-color" content="#ede0d4"/>
+    <meta name="theme-color" content="#003356"/>
     <meta name="twitter:card" content="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mechabanners.gif">
     <meta name="twitter:site" content="@discord">
     <meta name="twitter:creator" content="@DiscordMecha">
-    <meta content="#B08968" data-react-helmet="true" name="theme-color" />
+    <meta content="#003356" data-react-helmet="true" name="theme-color" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Mecha</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ksIsCute/web-assets/main/mecha.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.imgur.com/DCHin6s.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1 class="logo">
-        </h1>
-        <nav>
-          <ul>
-            <img src="images/mechastatic.png" alt="Mecha Logo" width="80px" height="70px" style="float: left; position: absolute; left: 1%">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/developers">Developers</a></li>
-            <li><a href="pages/security/privacy">Privacy Policy</a></li>
-            <li><a href="/pages/security/tos">TOS</a></li>
-            <li><a href="pages/support">Support</a></li>
-            
-          </ul>
-        </nav>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none splashlogo">
+          <img src="images/mechastatic.png" width="40" height="32" alt="icon">
+          <use xlink:href="/"></use>
+          <span class="fs-4"> Mecha</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="pages/security/tos" class="nav-link">TOS</a></li>
+          <li class="nav-item"><a href="pages/developers" class="nav-link">Developers</a></li>
+          <li class="nav-item"><a href="pages/support" class="nav-link">Support</a></li>
+          <li class="nav-item"><a href="pages/invite" class="nav-link">Invite</a></li>
+          <li class="nav-item"><a href="pages/security/privacy" class="nav-link">Privacy Policy</a></li>
+        </ul>
+      </header>
+    </div>
+    <div id='splash'">
+      <div class="animate__animated animate__zoomIn">
+        <img alt='MechaLogo' class='slogo animate__animated animate__heartBeat animate__infinite' src='images/mechastatic.png'/>
+        <br></br>
+        <h1 id="time"></h1>
       </div>
-      </h1>
-    </header>
-    <div id='splash'>
-      <img alt='MechaLogo' class='slogo' src='images/mechastatic.png'/>
+      <script>
+        var x = document.getElementById("time");
+        var d = new Date();
+        var hr = d.getHours();
+        console.log(hr);
+        if (hr < 10) {
+          x.innerHTML = "Good Morning!"
+        } else if (hr > 16) {
+            x.innerHTML = "Good Evening!"
+          } else if (hr > 9) {
+            x.innerHTML = "Good Afternoon!"
+          }
+      </script>
       <script>
         setTimeout(() => {
-        document.getElementById('splash').classList.toggle('sfade'); }, 2000);
+          document.getElementById('splash').classList.toggle('sfade'); 
+        }, 2000);
+        console.log("Fading splash");
         setTimeout(() => {
-          var el = document.getElementById('splash')
-          el.remove()
-        }, 3000)
+          var el = document.getElementById('splash');
+          console.log("Removing splash element");
+          el.remove();
+        }, 3000);
+        setTimeout(() => {
+          console.log("Scrolling disabled!");
+          TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+          LeftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+          window.onscroll = function() {
+            window.scrollTo(0, 0);
+          };
+        }, 100);
+        setTimeout(() => {
+          console.log("Scrolling enabled!")
+          window.onscroll = function() {};
+        }, 2500)
       </script>
     </div>
-    <h1 style="font-size: 100px; font-family:UniSans">MECHA</h1>
-    <p style="text-align:center" class="animate__animated animate__lightSpeedInRight">(BETA)</p>
-    <h3><i>"Redefining Modernity"</i></h3>
+    <h1 style="font-size: 100px; font-family:UniSans" class="animate__animated animate__pulse animate__infinite">MECHA</h1>
+    <h2 id="redefining" style="font-family:Lexend Deca"h2>
+    <script>
+          var e = document.getElementById('redefining');
+          const array = ["Redefining Moderation", "Redefining Modernity", "Redefining Commitment", "Redefining Creativity", "Redefining Customization", "Redefining Efficiency"];
+          var random = Math.floor(Math.random()*array.length);
+          e.innerHTML = array[random];
+    </script>
+    <h3 id="rm"></h3>
+    <script>
+      x = document.getElementById("rm");
+      x.innerHTML = "(Beta)";
+    </script>
     <br></br>
     <img src="images/HelpCommand.webp" width=400 height=300 alt="Custom help command example">
     <p> Automated Help Commands </p>
@@ -67,6 +113,26 @@
     <img src="images/Dog.webp" id="img3" width=400 height=300 alt="Dog Command Example">
     <p> Animal pictures and facts! </p>
     <br></br>
+    <div id="cookie" class="modal-dialog" role="document" style="position: absolute;bottom: 0; left: 0;background:#002945">
+      <div class="modal-content rounded-6 shadow">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" style="color:#000000">Yummy!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="CookieRem()"></button>
+        </div>
+        <div class="modal-body py-0">
+          <p style="color:#000000">Do you like cookies? We sure do! Infact Mecha uses cookies to enhance your experience here!</p>
+        </div>
+        <div class="modal-footer flex-column border-top-0">
+          <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2" onclick="CookieRem()">Ok!</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function CookieRem() {
+        let el = document.getElementById('cookie')
+        el.remove()
+      }
+    </script>
     <h1> Why Mecha? </h1>
     <ul>
       <h3>
@@ -75,10 +141,6 @@
       <h3>
         <li>Low latency and advanced moderation with easy to learn syntax</li>
       </h3>
-      <h3>
-        <li>Modern designs with specially designed color palettes</li>
-      </h3>
-      <img src="images/Palette.webp" alt="Custom Colour palette" class="colour-palette">
       <h3>
         <li>Mecha is in <i>BETA</i>, so expect some errors, bugs, and weird encounters, but also expect some <i>easter eggs!</i></li>
       </h3>
@@ -90,18 +152,101 @@
       <p><img src="https://dcbadge.vercel.app/api/shield/bot/930821149644963900?theme=discord&amp;logoColor=red" alt="Mecha's status" width=208px height=31px></p>
     </div>
     <img style = "position:fixed;bottom:0;right:0" onclick="darkmode()" src="https://i.imgur.com/9bd5R6w.png" class=imgh alt = "Toggle dark mode" width=50px height=50px>
+    <h1>Discord Features:</h1>
+    <div class="wrapper">
+      <div class="counter col_fourth">
+        <img src="images/server.png" height=70 width=70 alt="Server Icon">
+        <h2>40</h2>
+        <p class="count-text ">Current servers!</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/user.png" height=70 width=70 alt="User icon">
+        <h2>8947</h2>
+        <p class="count-text ">Active users!</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/stopwatch.png" height=70 width=70 alt="Timer icon">
+        <h2>24/7</h2>
+        <p class="count-text ">We're online! All the time!</p>
+      </div>
+      <br></br>
+    </div>
     <div class="btn-wrap">
-      <a class="btn" href="pages/invite">Invite V1.4.6!</a>
+      <a class="btn" href="pages/invite">Invite V1.5.0!</a>
       <a class="btn" href="pages/support" TOS>Mecha's Support Server!</a>
     </div>
-    <div>
+    <p>(Support and invite lead to the Discord versions)</p>
+    <h1> Revolt Features:</h1>
+    <div class="wrapper">
+      <div class="counter col_fourth">
+        <img src="images/server.png" height=70 width=70 alt="Server Icon">
+        <h2>15</h2>
+        <p class="count-text ">servers currently</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/user.png" height=70 width=70 alt="User icon">
+        <h2>873</h2>
+        <p class="count-text ">Active users!</p>
+      </div>
+      <div class="counter col_fourth">
+        <img src="images/stopwatch.png" height=70 width=70 alt="Timer icon">
+        <h2>24/7</h2>
+        <p class="count-text">We're online!</p>
+      </div>
+      <a href="https://github.com/MechaCore" class="beeg">
+        <div class="counter col_fourth">
+          <img src="images/code.png" height=70 width=70 alt="Code Icon">
+          <h2>Open Source!</h2>
+          <p class="count-text">Mecha's Revolt bot is completely open source! Using a python wrapper for revolt named <a href="https://app.revolt.chat/invite/Db5wFse4">Voltage!</a></p>
+        </div>
+      </a>
       <br></br>
-      <a href="https://discord.gg/sfdKY7ZufY" target="_blank"><img src="images/discord.png" class="imgh" alt="Mecha's Support Server"/></a>
-      <a href="https://twitter.com/@discordmecha" target="_blank"><img src="images/twitter.png" class="imgh" alt="Mecha's Twitter"/></a>
-      <a href="https://github.com/ksiscute" target="_blank"><img src="images/github.png" class="imgh" alt="Github"/></a>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="https://app.revolt.chat/bot/01FZB4GBHDVYY6KT8JH4RBX4KR">Invite v1.0.7!</a>
+      <a class="btn" href="https://app.revolt.chat/invite/PQdbCVys" TOS>Mecha's Server!</a>
+    </div>
+    <p>(Support and invite lead to the Revolt versions)</p>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="/"></use>
+            </svg>
+          </a>
+          <span style="color:#fff">© 2022 | Mecha</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://github.com/ksIsCute/MechaBot"><img class="imgh" width="24" height="24" src="images/github.png" alt="github"></a></li>
+          <li class="ms-3"><a class="text-muted" href="twitter.com/@discordMecha"><img class="imgh" width="24" height="24" src="images/twitter.png" alt="twitter"></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://discord.gg/sfdKY7ZufY"><img class="imgh" width="24" height="24" src="images/discord.png" alt="discord"></a></li>
+        </ul>
+      </footer>
     </div>
   </body>
   <script>
+    const counters = document.querySelectorAll('.count');
+    const speed = 2000;
+    
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = Math.trunc(target / speed);
+    
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
     function darkmode() {
       var element = document.body;
       element.classList.toggle("dark-mode");
