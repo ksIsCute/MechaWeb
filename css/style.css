@@ -27,6 +27,7 @@ html {
   height: calc(var(--vh, 1vh) * 100);
 }
 body {
+  -webkit-transition: all 0.3s ease-in-out;
   background: rgb(4,48,133);
   background: linear-gradient(234deg, rgba(4,48,133,1) 0%, rgba(45,97,199,1) 100%);
   background-repeat: no-repeat;
@@ -189,6 +190,7 @@ nav a:hover::before {
 }
 
 .dark-mode {
+  -webkit-transition: all 0.3s ease-in-out;
   background:#0c0d0f;
   background-repeat: no-repeat;
   background-attachment: fixed;
